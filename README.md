@@ -108,15 +108,3 @@ npm run dev
 npm run build
 npm run start
 ```
-
-## Contributing
-
-Contributions are welcome. Please open an issue or submit a pull request with your proposed changes.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For questions or support, contact the project maintainer.
