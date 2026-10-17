@@ -89,6 +89,12 @@ npm run dev
 
 The frontend usually runs at `http://localhost:5173` and the backend at `http://localhost:5000`.
 
+## Deploying the frontend to GitHub Pages
+
+The GitHub Actions workflow in `.github/workflows/deploy-pages.yml` builds and deploys the client whenever changes are pushed to `main`. GitHub Pages must use **GitHub Actions** as its build and deployment source in the repository's **Settings → Pages**. After the first successful workflow run, the site will be available at `https://prateek2302.github.io/eduverse-mern-final/`.
+
+GitHub Pages hosts only the static frontend; it does not run the Express API or MongoDB. To connect a separately deployed backend, add a repository variable named `VITE_API_BASE_URL` containing the backend's API base URL (for example, `https://api.example.com/api`) under **Settings → Secrets and variables → Actions → Variables**. The workflow passes this value to the Vite build. Without it, API requests use `/api`, which is suitable for local development with the Vite proxy but requires a backend at that path in production.
+
 ## Environment Variables
 
 Add these variables to your environment:
