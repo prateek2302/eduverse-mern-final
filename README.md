@@ -12,6 +12,20 @@ EduVerse is a full-stack MERN application for online learning and course managem
 - REST API built with Node.js and Express
 - MongoDB database integration
 
+## Screenshots
+
+### Home page
+
+![EduVerse home page](docs/screenshots/homepage.png)
+
+### Browse categories and featured courses
+
+![Course categories and featured courses](docs/screenshots/categories.png)
+
+### Featured course details
+
+![Featured course cards](docs/screenshots/featured-courses.png)
+
 ## Tech Stack
 
 - Frontend: React, Vite, Tailwind CSS
